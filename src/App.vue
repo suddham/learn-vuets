@@ -1,6 +1,9 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld
+    msg="Welcome to Your Vue.js + TypeScript App"
+    :userObj="{ name: 'Hi! Welcome', username: 'Hello world' }"
+  />
 </template>
 
 <script lang="ts">
