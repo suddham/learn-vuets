@@ -8,7 +8,7 @@
       <label for="password"> Password </label>
       <input type="text" placeholder="Enter password" required />
     </div>
-
+    <span class="error">{{ userStore.state.error }}</span>
     <button type="submit">Login</button>
   </form>
 </template>
@@ -26,7 +26,12 @@ export default defineComponent({
       form.password = '';
     };
 
-    return { form, onSubmit };
+    return { form, onSubmit, userStore };
   },
 });
 </script>
+<style scoped>
+.error {
+  color: red;
+}
+</style>
